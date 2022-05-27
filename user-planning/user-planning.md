@@ -1,3 +1,11 @@
+------------------------------------
+IMPORTANT BASELINE OF USER PLANNING
+------------------------------------
+- As a non-technical HR manager, I want to quickly see the skills and experience of a candidate, so that I can evaluate whether the candidate meets the requirements for an open position at my company.
+
+- As a mid-level engineer, I want view a junior developer's project and read their code, so that I can evaluate their coding skills.
+
+- As a friend of the person who built this portfolio, I want to see what my friend has built so that I have an understanding of what they do as a developer and I can encourage them.
 
 ---------------
 As a visitor...
@@ -40,3 +48,5 @@ Stretch Goals
 2) Be able to make stylistic transitions for my modals overlap the main page in an offset manner like the wireframe
 3) Implement a media query for mobile visitors
 Is it possible to make an effective minimalistic page, that can be as effective, or p
+
+Have a modal minimize button, for when its minimized it'll be a size of a post it note, when all 4 post it notes have been minimized, have a little hidden text/glow text of something clever or creative
