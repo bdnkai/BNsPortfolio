@@ -17,8 +17,8 @@ body {
     transition-delay: 5ms;
 }
 
-.Modal_Container {
-    display: none;
+.About_Me_Modal {
+    /* display: none; */
     position: fixed;
     z-index: 1;
     left: 0;
