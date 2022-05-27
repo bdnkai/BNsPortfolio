@@ -1,4 +1,4 @@
-let aboutMeContent = document.querySelector('.about_me_modal');
+let aboutMeContent = document.querySelector('.About_Me_Modal');
 let aboutMeButton = document.querySelector('.about_me_button');
 let exitButtonEl = document.querySelector('.modal_exit_button');
 

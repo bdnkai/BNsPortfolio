@@ -5,7 +5,7 @@
   - within header, main footer:
 
     - make nav links with:
-      - About Me -Resume -Portfolio - Contact Me
+      - About Me -Portfolio -Resume -Contact Me
         - Make Modal
           - Title
           - Paragraph
@@ -16,3 +16,10 @@
               Resume (About Me, Portfolio)
               Contact Me (About Me, Portfolio)
     - Include TMAY Branding section
+
+
+/*----- constants -----*/
+/*----- app's state (variables) -----*/
+/*----- cached element references -----*/
+/*----- event listeners -----*/
+/*----- functions -----*/
