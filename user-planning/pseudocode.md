@@ -1,4 +1,4 @@
-- make an html
+HTML:
 
   - include basic header, main, footer
   - each class, or id should remain organized in seperated document for easy back tracking
@@ -16,6 +16,14 @@
               Resume (About Me, Portfolio)
               Contact Me (About Me, Portfolio)
     - Include TMAY Branding section
+
+CSS:
+
+- Starting Page
+- Modals
+  -Inside Modals
+  
+
 
 
 /*----- constants -----*/
