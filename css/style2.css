@@ -15,7 +15,9 @@ body {
 .full_name {
     font-size: 50px;
 }
-/* .about_me_button ,.portfolio_button, .resume_button, .contact_me_button {
+
+
+.about_me_button ,.portfolio_button, .resume_button, .contact_me_button {
     color: white;
     background-color: rgb(194, 105, 105);
     padding: 1em 2em;
@@ -28,7 +30,52 @@ body {
     transition-delay: 5ms;
 }
 
-.About_Me_Modal, .Portfolio_Modal, .Resume_Modal , .Contact_Me_Modal {
+
+
+/*==========  MODALS CSS STARTS HERE  =========== */
+/*------  ABOUT ME MODAL  ------ */
+.About_Me_Modal{
+    display: absolute;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+.About_Me_Modal_Content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+/*-----------  PORTFOLIO MODAL  ----------- */
+.Portfolio_Modal {
+    display: absolute;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+.Resume_Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+.Contact_Me_Modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -41,14 +88,31 @@ body {
 }
 
 
+/*==========  MODALS CONTENT  =========== */
 
-.about_me_modal_content, .portfolio_modal_content, .resume_modal_content, .contact_me_modal_content {
+
+.Portfolio_Modal_Content {
     background-color: #f4f4f4;
     margin: 20% auto;
     padding: 20px;
     width: 70%;
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
+._content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+._content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+ 
 
 .modal_exit_button {
     color: #ccc;
@@ -57,9 +121,12 @@ body {
     font-size: 20px;
 }
 
+
+
+
 .modal_exit_button:hover,
 .modal_exit_button:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-} */
+}  

@@ -25,33 +25,30 @@
 				<h1><span class="full_name">Brandon Nguyen</span></h1>
 			</div>
 		</head>
+
 		<main>
 			<!-- ============ / FRONT PAGE / ========== -->
-			<div class="starter-container">
-				<section>
-					<div class="Nav_Container">
-						<nav>
-							<ul>
-								<div class="About_Me">
-									<li><button class="about_me_button">About Me</button></li>
-								</div>
-								<div class="Portfolio">
-									<li><button class="portfolio_button">Portfolio</button></li>
-								</div>
-								<div class="Resume">
-									<li><button class="resume_button">Resume</button></li>
-								</div>
-								<div class="Contact_Me">
-									<li><button class="contact_me_button">Contact Me</button></li>
-								</div>
-							</ul>
-						</nav>
-					</div>
+			<div class="Starter-Container">
+				<section class="Nav_Container">
+					<nav>
+						<ul>
+							<div class="About_Me">
+								<li><button class="about_me_button">About Me</button></li>
+							</div>
+							<div class="Portfolio">
+								<li><button class="portfolio_button">Portfolio</button></li>
+							</div>
+							<div class="Resume">
+								<li><button class="resume_button">Resume</button></li>
+							</div>
+							<div class="Contact_Me">
+								<li><button class="contact_me_button">Contact Me</button></li>
+							</div>
+						</ul>
+					</nav>
 				</section>
-				<section>
-					<div class="tldr">
-						<h1>tldr:</h1>
-					</div>
+				<section class="Branding Container">
+					<h1><span class="tldr">tldr:</span></h1>
 					<div class="branding_quote">
 						<h3>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus,
@@ -68,12 +65,13 @@
 				<!-- ============= / ABOUT ME / ========== -->
 				<div class="About_Me_Modal">
 					<!--About Me Parent-->
-					<div class="about_me_modal_content">
+					<div class="About_Me_Modal_Content">
 						<div class="modal_title">
 							<h1>About Me</h1>
 						</div>
+                        <span class="modal_exit_button">
 						<button class="modal_exit_button">&times;</button>
-						<span class="modal_exit_button"></span>
+						</span>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
 							distinctio sunt sint, aperiam molestiae dolor! Quo, quaerat harum
@@ -86,26 +84,20 @@
 							in voluptatum officia pariatur vel aliquid ex illo nostrum iste
 							aperiam impedit quas modi exercitationem aliquam?
 						</p>
-						<nav>
-							<div class="Modal_Footer_Nav">
+                        <div class="Modal_Footer_Nav">
+						    <nav>
 								<ul>
-									<div class="Modal_Footer_Container">
-										<span class="footer_nav_left">
-											<li>
-												<button class="footer_nav_resume">Resume</button>
-											</li>
-										</span>
-										<span class="footer_nav_right">
-											<li>
-												<button class="footer_nav_contact_me">
-													Contact Me
-												</button>
-											</li>
-										</span>
-									</div>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_resume">Resume</button>
+								    </li>
+								    <li class="foot_nav_right"">
+								    	<button class="footer_nav_contact_me">
+								    		Contact Me
+								    	</button>
+								    </li>
 								</ul>
-							</div>
-						</nav>
+                            </nav>
+                        </div>
 					</div>
 				</div>
 				<!-- =============  ABOUT ME ENDS ========== -->
@@ -114,9 +106,7 @@
 					<div class="Portfolio_Modal_Content">
 						<div class="modal_title">
 							<h1>Portfolio</h1>
-						</div>
-						<button class="modal_exit_button">&times;</button>
-						<span class="modal_exit_button"></span>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
 						<div class="portfolio_list_container">
 							<ul>
 								<div id="project_flip" class="project_1">
@@ -133,26 +123,20 @@
 								</div>
 							</ul>
 						</div>
-						<nav>
-							<div class="Modal_Footer_Nav">
+                        <div class="Modal_Footer_Nav">
+						    <nav>
 								<ul>
-									<div class="Modal_Footer_Container">
-										<span class="footer_nav_left">
-											<li>
-												<button class="footer_nav_resume">Resume</button>
-											</li>
-										</span>
-										<span class="footer_nav_right">
-											<li>
-												<button class="footer_nav_contact_me">
-													Contact Me
-												</button>
-											</li>
-										</span>
-									</div>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_resume">Resume</button>
+								    </li>
+								    <li class="foot_nav_right"">
+								    	<button class="footer_nav_contact_me">
+								    		Contact Me
+								    	</button>
+								    </li>
 								</ul>
-							</div>
-						</nav>
+                            </nav>
+						</div>
 					</div>
 				</div>
 				<!-- ============= PORTFOLIO ENDS ========== -->
@@ -161,30 +145,22 @@
 					<div class="Resume_Modal_Content">
 						<div class="modal_title">
 							<h1>Resume</h1>
-						</div>
-						<button class="modal_exit_button">&times;</button>
-						<span class="modal_exit_button"></span>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
 						<div class="resume_content">
 							<p>RESUME GOES HERE</p>
 						</div>
-						<nav>
-							<div class="Modal_Footer_Nav">
+                        <div class="Modal_Footer_Nav">
+						    <nav>
 								<ul>
-									<div class="Modal_Footer_Container">
-										<span class="footer_nav_left">
-											<li>
-												<button class="footer_nav_about_me">About Me</button>
-											</li>
-										</span>
-										<span class="footer_nav_right">
-											<li>
-												<button class="footer_nav_portfolio">Portfolio</button>
-											</li>
-										</span>
-									</div>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_about_me">About Me</button>
+								    </li>
+								    <li class="foot_nav_right"">
+								    	<button class="footer_nav_portfolio">Portfolio</button>
+								    </li>
 								</ul>
-							</div>
-						</nav>
+                            </nav>
+						</div>
 					</div>
 				</div>
 				<!-- =============== RESUME ENDS ========== -->
@@ -193,9 +169,7 @@
 					<div class="Contact_Me_Content">
 						<div class="modal_title">
 							<h1>Contact Me</h1>
-						</div>
-						<button class="modal_exit_button">&times;</button>
-						<span class="modal_exit_button"></span>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
 						<div class="Contact_Me_Form">
 							<div class="input_name"><p>Name</p></div>
 							<div class="input_email"><p>Email</p></div>
@@ -206,18 +180,12 @@
 						<nav>
 							<div class="Modal_Footer_Nav">
 								<ul>
-									<div class="Modal_Footer_Container">
-										<span class="footer_nav_left">
-											<li>
-												<button class="footer_nav_about_me">About Me</button>
-											</li>
-										</span>
-										<span class="footer_nav_right">
-											<li>
-												<button class="footer_nav_portfolio">Portfolio</button>
-											</li>
-										</span>
-									</div>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_about_me">About Me</button>
+								    </li>
+								    <li class="foot_nav_right"">
+								    	<button class="footer_nav_portfolio">Portfolio</button>
+								    </li>
 								</ul>
 							</div>
 						</nav>
@@ -243,6 +211,6 @@
 			<!-- ========== PLAT GOAL END =============== -->
 		</main>
 		<footer></footer>
-		<script src="/js/script.js"></script>
+		<script src="/js/script2.js"></script>
 	</body>
 </html>
