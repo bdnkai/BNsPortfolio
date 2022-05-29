@@ -1,0 +1,125 @@
+/*===================  CSS  ==================== */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*======  FLEXING CONTAINERS STARTS HERE  ======*/
+.Name_Container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    Margin: auto;
+    max-width: 65vh;
+    padding-top: 22vh;
+    padding-bottom: 1vh;
+
+}
+
+.Starter_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    Margin: auto;
+    max-width: 65vh;
+
+}
+
+.List_Container {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50vh;
+    height: 5vh;
+}
+
+
+
+/*=========  MODALS CSS STARTS HERE  ========== */
+
+/*------  ABOUT ME MODAL  ------ */
+.About_Me_Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.About_Me_Modal_Content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+
+/*-----------  PORTFOLIO MODAL  ----------- */
+.Portfolio_Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.Portfolio_Modal_Content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+
+/*-----------  RESUME MODAL  ----------- */
+.Resume_Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.Resume_Modal_Content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+
+/*-----------  CONTACT ME MODAL  ----------- */
+.Contact_Me_Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.Contact_Me_Content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+}
+
+/*==========  END  =========== */
