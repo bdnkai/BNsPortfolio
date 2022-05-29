@@ -1,5 +1,3 @@
-/*===================  CSS  ==================== */
-
 body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -11,7 +9,7 @@ body {
     text-align: center;
     Margin: auto;
     max-width: 800px;
-    padding-top: 250px;
+    margin-top: 225px;
 
 }
 
@@ -43,20 +41,22 @@ body {
 .About_Me_Modal {
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .About_Me_Modal_Content {
-    background-color: #f4f4f4;
-    margin: 20% auto;
+    position:-webkit-sticky;
+    background-color: rgb(78, 165, 150);
+    width: 500px;
+    height: 650px;
+    margin-left: 830px;
+    margin-top: 200px;
+    /* margin: 0% auto; */
     padding: 20px;
-    width: 70%;
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
@@ -95,11 +95,18 @@ body {
 }
 
 .Resume_Modal_Content {
-    background-color: #f4f4f4;
-    margin: 20% auto;
+    position:-webkit-sticky;
+    background-color: rgb(78, 165, 150);
+    width: 500px;
+    height: 650px;
+    margin-top: 22px;
+    margin-left: 250px;
+    margin-right: 145;
+    margin-bottom: 100px;
+    /* margin: 0% auto; */
     padding: 20px;
-    width: 70%;
-    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 8px 0,rgba(0, 0, 0, .1),
+    0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
 /*-----------  CONTACT ME MODAL  ----------- */
@@ -125,7 +132,7 @@ body {
 
 /*===============  BUTTONS STARTS HERE  =============*/
 
-/*----------  MAIN PAGE PARENT TAGGED BUTTONS  ---------*/
+/*----------  NAVIGATION BUTTON (FRONT PAGE)  ---------*/
 .About_Me,
 .Portfolio,
 .Resume,
@@ -133,8 +140,8 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    height: 25px;
-    border-right: 2px solid rgba(86, 168, 134, 0.575);
+    height: 28px;
+    border-right: 2px solid rgba(80, 155, 124, 0.575);
 
 }
 
@@ -143,30 +150,30 @@ body {
 }
 
 
-/*-----------  MAIN PAGE CHILD TAGS  -------------*/
+/*--------  NAVIGATION BUTTONS (FRONT PAGE)  ---------*/
 .about_me_button,
 .portfolio_button,
 .resume_button,
 .contact_me_button {
-    width: 190px;
+    width: 184px;
     height: 45px;
     font-family: 'Poppins', sans-serif;
     font-size: 95%;
     font-weight: 500;
-    border-top: 2px solid rgba(137, 214, 198, 0);
-    border-left: 2px solid rgba(137, 214, 198, 0);
-    border-bottom: 2px solid rgba(137, 214, 198, 0);
-    border-right: 2px solid rgba(137, 214, 198, 0);
+    border-top: 0px solid rgba(137, 214, 198, 0);
+    border-left: 0px solid rgba(137, 214, 198, 0);
+    border-bottom: 0px solid rgba(137, 214, 198, 0);
+    border-right: 0px solid rgba(137, 214, 198, 0);
     background-color: rgba(137, 214, 198, 0);
     cursor: pointer;
 }
 
 .about_me_button {
-    border-left: 2.5px solid rgba(86, 168, 134, 0.575);
+    border-left: 2.2px solid rgba(80, 155, 124, 0.575);
 }
 
 .contact_me_button {
-    border-right: 2.5px solid rgba(86, 168, 134, 0.575);
+    border-right: 2.2px solid rgba(80, 155, 124, 0.575);
 }
 
 
