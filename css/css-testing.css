@@ -1,114 +1,44 @@
+/*===================  CSS  ==================== */
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
 /*======  FLEXING CONTAINERS STARTS HERE  ======*/
 .Name_Container {
     display: flex;
     justify-content: center;
     text-align: center;
     Margin: auto;
-    max-width: 60vh;
-    padding-top: 22vh;
-    padding-bottom: 0vh;
+    max-width: 800px;
+    padding-top: 250px;
 
 }
 
 .Starter_Container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     Margin: auto;
-    max-width: 60vh;
-    
+    max-width: 700px;
+
 }
 
 .List_Container {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    min-width: 60vh;
-    height: 6vh;
+    min-width: 200px;
+    height: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
 
-/*========== TEXT EDITING STARTS HERE ==========*/
-.full_name {
-    font-family: 'Poppins', sans-serif;
-    flex-wrap: nowrap;
-    font-size: 60px;
-    font-weight: 200;
-    
-}
-.tldr {
-    font-size: 25px;
-    padding-left: 1vh;
-    font-weight: 500;
-    padding-right: 4px;
-    
-}
-.branding_quote{
-    text-align:justify;
-    min-width: 20px;
-    font-size: 18px;
-    line-height: 150%;
-}
+/*=========  MODALS CSS STARTS HERE  ========== */
 
-h3 {
-    padding-top: 1vh;
-    font-weight: 500;
-}
-
-/*===============  BUTTONS STARTS HERE  =============*/
-
-.About_Me, .Portfolio, .Resume, .Contact_Me {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    height: 3vh;
-    border-right: 2px solid rgba(86, 168, 134, 0.575);
-
-}
-
-.about_me_button, .portfolio_button, .resume_button, .contact_me_button{
-    width: 18vh;
-    height: 6vh;
-    /* font-family: 'Baloo Tammudu 2', cursive; */
-    font-family: 'Poppins', sans-serif;
-    font-size: 110%;
-    font-weight: 500;
-    border-top: 2px solid rgba(137,214,198,0);
-    border-left: 2px solid rgba(137, 214, 198, 0);
-    border-bottom: 2px solid rgba(137, 214, 198, 0);
-    border-right: 2px solid rgba(137, 214, 198, 0);
-    background-color: rgba(137, 214, 198, 0);
-    cursor: pointer;
-}
-
-.about_me_button {
-    border-left: 2.5px solid rgba(86, 168, 134, 0.575);
-}
-.contact_me_button{
-    border-right: 2.5px solid rgba(86, 168, 134, 0.575);
-}
-.Contact_Me{
-    border-right: 2px solid rgba(86, 168, 134, 0)
-}
-
-.about_me_button:hover,
-.portfolio_button:hover,
-.resume_button:hover,
-.contact_me_button:hover {
-    /* transition-duration: 17ms; */
-    transition-delay: 50ms;
-    font-size: 145%;
-    font-weight: 400;
-}
-
-
-
-/*==========  MODALS CSS STARTS HERE  =========== */
 /*------  ABOUT ME MODAL  ------ */
 .About_Me_Modal {
     display: none;
@@ -193,20 +123,89 @@ h3 {
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
-/*==========  MODALS CONTENT  =========== */
+/*===============  BUTTONS STARTS HERE  =============*/
 
-/*===== Modal Exit Button ===== */
+/*----------  MAIN PAGE PARENT TAGGED BUTTONS  ---------*/
+.About_Me,
+.Portfolio,
+.Resume,
+.Contact_Me {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 25px;
+    border-right: 2px solid rgba(86, 168, 134, 0.575);
 
-.modal_exit_button {
-    color: #ccc;
-    float: right;
-    border: none;
-    font-size: 20px;
 }
 
-.modal_exit_button:hover,
-.modal_exit_button:focus {
-    color: black;
-    text-decoration: none;
+.Contact_Me {
+    border-right: 2px solid rgba(86, 168, 134, 0)
+}
+
+
+/*-----------  MAIN PAGE CHILD TAGS  -------------*/
+.about_me_button,
+.portfolio_button,
+.resume_button,
+.contact_me_button {
+    width: 190px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 95%;
+    font-weight: 500;
+    border-top: 2px solid rgba(137, 214, 198, 0);
+    border-left: 2px solid rgba(137, 214, 198, 0);
+    border-bottom: 2px solid rgba(137, 214, 198, 0);
+    border-right: 2px solid rgba(137, 214, 198, 0);
+    background-color: rgba(137, 214, 198, 0);
     cursor: pointer;
+}
+
+.about_me_button {
+    border-left: 2.5px solid rgba(86, 168, 134, 0.575);
+}
+
+.contact_me_button {
+    border-right: 2.5px solid rgba(86, 168, 134, 0.575);
+}
+
+
+.about_me_button:hover,
+.portfolio_button:hover,
+.resume_button:hover,
+.contact_me_button:hover {
+    transition-duration: 25ms;
+    transition-delay: 25ms;
+    font-size: 130%;
+    font-weight: 400;
+}
+
+/*==========TEXT EDITING STARTS HERE==========*/
+
+.full_name {
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: nowrap;
+    font-size: 60px;
+    font-weight: 200;
+
+}
+
+.tldr {
+    font-size: 25px;
+    font-weight: 400;
+    padding-right: 4px;
+
+}
+
+.branding_quote {
+    text-align: justify;
+    min-width: 500px;
+    font-size: 18px;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+h3 {
+    padding-top: 1vh;
+    font-weight: 500;
 }

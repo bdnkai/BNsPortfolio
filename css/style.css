@@ -147,7 +147,7 @@ body {
 .portfolio_button,
 .resume_button,
 .contact_me_button {
-    width: 18vh;
+    width: 200px;
     height: 6vh;
     font-family: 'Poppins', sans-serif;
     font-size: 110%;
@@ -177,4 +177,34 @@ body {
     transition-delay: 50ms;
     font-size: 145%;
     font-weight: 400;
+}
+
+/*==========TEXT EDITING STARTS HERE==========*/ 
+
+.full_name {
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: nowrap;
+    font-size: 60px;
+    font-weight: 200;
+
+}
+
+.tldr {
+    font-size: 25px;
+    padding-left: 1vh;
+    font-weight: 500;
+    padding-right: 4px;
+
+}
+
+.branding_quote {
+    text-align: justify;
+    min-width: 80vh;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+h3 {
+    padding-top: 1vh;
+    font-weight: 500;
 }
