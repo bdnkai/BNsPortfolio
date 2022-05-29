@@ -122,4 +122,59 @@ body {
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
-/*==========  END  =========== */
+/*===============  BUTTONS STARTS HERE  =============*/
+
+/*----------  MAIN PAGE PARENT TAGGED BUTTONS  ---------*/
+.About_Me,
+.Portfolio,
+.Resume,
+.Contact_Me {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 3vh;
+    border-right: 2px solid rgba(86, 168, 134, 0.575);
+
+}
+
+.Contact_Me {
+    border-right: 2px solid rgba(86, 168, 134, 0)
+}
+
+
+/*-----------  MAIN PAGE CHILD TAGS  -------------*/
+.about_me_button,
+.portfolio_button,
+.resume_button,
+.contact_me_button {
+    width: 18vh;
+    height: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+    border-top: 2px solid rgba(137, 214, 198, 0);
+    border-left: 2px solid rgba(137, 214, 198, 0);
+    border-bottom: 2px solid rgba(137, 214, 198, 0);
+    border-right: 2px solid rgba(137, 214, 198, 0);
+    background-color: rgba(137, 214, 198, 0);
+    cursor: pointer;
+}
+
+.about_me_button {
+    border-left: 2.5px solid rgba(86, 168, 134, 0.575);
+}
+
+.contact_me_button {
+    border-right: 2.5px solid rgba(86, 168, 134, 0.575);
+}
+
+
+.about_me_button:hover,
+.portfolio_button:hover,
+.resume_button:hover,
+.contact_me_button:hover {
+    /* transition-duration: 17ms; */
+    transition-delay: 50ms;
+    font-size: 145%;
+    font-weight: 400;
+}
