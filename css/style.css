@@ -24,11 +24,6 @@ body {
 
 .List_Container {
     display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-left: 20px;
-    margin-right: 20px;
     height: 20px;
     padding-bottom: 15px;
     padding-top: 12px;
@@ -48,8 +43,6 @@ body {
     min-width: 150px;
     height: 28px;
     border-right: 2px solid rgba(80, 155, 124, 0.575);
-
-
 }
 
 .Contact_Me {
@@ -101,6 +94,90 @@ body {
     font-weight: 400;
 }
 
+/* ---------  NAVIGATION BUTTONS (FOOTER)  ------- */
+.Modal_Footer_Nav {
+    display: inline-flex;
+    justify-content: center;
+    width: 200px;
+    min-width: 450px;
+    min-height: 20px;
+}
+
+.footer_nav_left,
+.footer_nav_right {
+    display: inline;
+    margin-top: 20px;
+}
+
+.footer_nav_left {
+    padding-right: 50px;
+}
+
+.footer_nav_right {
+    padding-left: 45px;
+}
+
+.footer_nav_resume,
+.footer_nav_contact_me,
+.footer_nav_about_me,
+.footer_nav_portfolio {
+    justify-content: space-around;
+    width: 110px;
+    height: 35px;
+    max-height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    /* flex-wrap: nowrap; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    background-color: rgba(205, 199, 195, .0);
+    border-right: 1px solid rgba(205, 198, 195, 0);
+    border-top: 1px solid rgba(205, 198, 195, 0);
+    border-left: 1px solid rgba(205, 198, 195, 0);
+    border-bottom: 1px solid rgba(205, 198, 195, 0);
+    /* border-radius: 3px; */
+    cursor: pointer;
+}
+
+.footer_nav_resume:hover,
+.footer_nav_contact_me:hover,
+.footer_nav_about_me:hover,
+.footer_nav_portfolio:hover {
+    color: #ca855d;
+    font-size: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------------  EXIT BUTTONS  --------------- */
+
+.modal_exit_button {
+    display: flex;
+    justify-content: first baseline;
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    margin-top: 2px;
+    margin-right: 4px;
+    background-color: rgba(0, 0, 0, .0);
+    color: rgb(53, 93, 97);
+    top: 0;
+    right: 0;
+    border: none;
+    font-size: 30px;
+}
+
+.modal_exit_button:hover,
+.modal_exit_button:focus {
+    color: #de9d77;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*=========  MODALS CSS STARTS HERE  ========== */
 
@@ -121,7 +198,7 @@ body {
 .About_Me_Modal_Content {
     display: block;
     position: fixed;
-    background-color: rgb(78, 165, 150);
+    background-color: rgba(195, 221, 224, 0.95);
     width: 450px;
     height: 600px;
     margin-right: 150px;
@@ -147,7 +224,7 @@ body {
 .Portfolio_Modal_Content {
     display: block;
     position: fixed;
-    background-color: rgb(78, 165, 150);
+    background-color: rgba(195, 221, 224, 0.95);
     width: 450px;
     height: 600px;
     margin-right: 150px;
@@ -173,7 +250,7 @@ body {
 .Resume_Modal_Content {
     display: block;
     position: fixed;
-    background-color: rgb(78, 165, 150);
+    background-color: rgba(195, 221, 224, 0.95);
     width: 450px;
     height: 600px;
     margin-left: 125px;
@@ -199,7 +276,7 @@ body {
 .Contact_Me_Content {
     display: block;
     position: fixed;
-    background-color: rgb(78, 165, 150);
+    background-color: rgba(195, 221, 224, 0.95);
     width: 450px;
     height: 600px;
     margin-left: 125px;
@@ -209,7 +286,9 @@ body {
     ;
 }
 
-/*==========TEXT EDITING STARTS HERE==========*/
+
+
+/*===============  TEXT EDITING STARTS HERE  ===============*/
 
 .full_name {
     font-family: 'Poppins', sans-serif;
@@ -243,4 +322,33 @@ body {
 h3 {
     padding-top: 1vh;
     font-weight: 500;
+}
+
+/* --------------- INSIDE MODALS CONTENT STARTS HERE --------------- */
+
+.modal_title {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 160%;
+    background-color: rgba(237, 211, 192, 0.75);
+    border-right: 3px solid rgba(0, 0, 0, 1);
+    border-top: 3px solid rgba(0, 0, 0, 1);
+    border-left: 3px solid rgba(0, 0, 0, 1);
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.about_me_content,
+.portfolio_list_container,
+.resume_content,
+.Contact_Me_Form {
+    justify-content: center;
+    text-align: justify;
+    width: 400px;
+    height: 425px;
+    margin-left: 3%;
+    margin: 3% auto;
 }
