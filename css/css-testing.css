@@ -1,8 +1,8 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    max-width: 1300px;
-    min-height: 800px;
-    Margin: 0% auto;
+    max-width: 1200px;
+    max-height: 800px;
+    margin: 30vh auto;
 }
 
 /*======  FLEXING CONTAINERS STARTS HERE  ======*/
@@ -10,9 +10,6 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    Margin: auto;
-    padding-top: 30vh;
-
 }
 
 .Starter_Container {
@@ -29,9 +26,9 @@ body {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    /* min-width: 13vh; */
-    max-width: 13vh;
-    margin-left: 2% auto;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 20px;
     padding-bottom: 15px;
     padding-top: 12px;
@@ -44,9 +41,11 @@ body {
 .Portfolio,
 .Resume,
 .Contact_Me {
-    display: flex;
+    display: inline-flex;
     text-align: center;
     align-items: center;
+    max-width: 170px;
+    min-width: 150px;
     height: 28px;
     border-right: 2px solid rgba(80, 155, 124, 0.575);
 
@@ -54,7 +53,8 @@ body {
 }
 
 .Contact_Me {
-    border-right: 2px solid rgba(86, 168, 134, 0)
+    border-right: 2px solid rgba(86, 168, 134, 0);
+    flex-wrap: nowrap;
 }
 
 
@@ -63,13 +63,12 @@ body {
 .portfolio_button,
 .resume_button,
 .contact_me_button {
-    width: 150px;
-    max-width: 138px;
-    min-width: 148px;
+    width: 11vw;
+    max-width: 170px;
+    min-width: 150px;
     height: 45px;
     max-height: 45px;
     flex-wrap: nowrap;
-    margin-left: 2% auto;
     font-family: 'Poppins', sans-serif;
     font-size: 95%;
     font-weight: 500;
@@ -87,6 +86,7 @@ body {
 
 .contact_me_button {
     border-right: 2.2px solid rgba(80, 155, 124, 0.575);
+    flex-wrap: nowrap;
 }
 
 
@@ -97,7 +97,7 @@ body {
     flex-wrap: nowrap;
     transition-duration: 25ms;
     transition-delay: 25ms;
-    font-size: 130%;
+    font-size: 115%;
     font-weight: 400;
 }
 
@@ -108,22 +108,25 @@ body {
 .About_Me_Modal {
     display: none;
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
+    top: 10vh;
+    max-width: 1200px;
+    min-width: 100px;
+    max-height: 825px;
+    min-height: 625px;
+    height: 825px;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .About_Me_Modal_Content {
-    position:-webkit-sticky;
+    display: block;
+    position: fixed;
     background-color: rgb(78, 165, 150);
-    width: 500px;
-    height: 650px;
-    margin-left: 830px;
-    margin-top: 200px;
-    /* margin: 0% auto; */
-    padding: 20px;
+    width: 450px;
+    height: 600px;
+    margin-right: 150px;
+    margin-left: 625px;
+    margin-top: 30px;
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
@@ -131,20 +134,25 @@ body {
 .Portfolio_Modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
+    top: 10vh;
+    max-width: 1200px;
+    min-width: 100px;
+    max-height: 825px;
+    min-height: 625px;
+    height: 825px;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .Portfolio_Modal_Content {
-    background-color: #f4f4f4;
-    margin: 20% auto;
-    padding: 20px;
-    width: 70%;
+     display: block;
+    position: fixed;
+    background-color: rgb(78, 165, 150);
+    width: 450px;
+    height: 600px;
+    margin-right: 150px;
+    margin-left: 625px;
+    margin-top: 30px;
     box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
@@ -152,49 +160,52 @@ body {
 .Resume_Modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
+    top: 10vh;
+    max-width: 1200px;
+    min-width: 100px;
+    max-height: 825px;
+    min-height: 625px;
+    height: 825px;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .Resume_Modal_Content {
-    position:-webkit-sticky;
+    display: block;
+    position: fixed;
     background-color: rgb(78, 165, 150);
-    width: 500px;
-    height: 650px;
-    margin-top: 22px;
-    margin-left: 250px;
-    margin-right: 145;
-    margin-bottom: 100px;
-    /* margin: 0% auto; */
-    padding: 20px;
-    box-shadow: 0 5px 8px 0,rgba(0, 0, 0, .1),
-    0 7px 20px 0 rgba(0, 0, 0, .1);
+    width: 450px;
+    height: 600px;
+    margin-left: 125px;
+    margin-right: 625px;
+    margin-top: 130px;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
 }
 
 /*-----------  CONTACT ME MODAL  ----------- */
 .Contact_Me_Modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
+    top: 10vh;
+    max-width: 1200px;
+    min-width: 100px;
+    max-height: 825px;
+    min-height: 625px;
+    height: 825px;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .Contact_Me_Content {
-    background-color: #f4f4f4;
-    margin: 20% auto;
-    padding: 20px;
-    width: 70%;
-    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+    display: block;
+    position: fixed;
+    background-color: rgb(78, 165, 150);
+    width: 450px;
+    height: 600px;
+    margin-left: 125px;
+    margin-right: 625px;
+    margin-top: 130px;
+    box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);;
 }
 
 
@@ -218,18 +229,16 @@ body {
 
 .branding_quote {
     display: flex;
-    align-content: center;
     text-align: justify;
-    max-width: 34vw;
-    min-width: 600px;
-    height: 200px;
+    width: 80vw;
+    max-width: 620px;
+    min-width: none;
     max-height: 200px;
-    margin-left: 0% auto;
-    margin-right: 2% auto;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 18px;
     line-height: 150%;
-    padding-top: 10px;
-   
+    padding-top: 1.5%;
 }
 
 h3 {
