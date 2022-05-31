@@ -208,7 +208,6 @@ body {
     min-height: 555px;
     max-height: 605px;
     width: 450px;
-    /* height: 600px; */
     margin-right: 150px;
     margin-left: 625px;
     margin-top: 30px;
@@ -558,12 +557,13 @@ color-white {
 
 .flip-box-header {
     font-size: 22px;
+    font-weight: 500;
 }
 
 .flip-box p {
     font-size: 11px;
     line-height: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .flip-box-img {
@@ -577,7 +577,20 @@ color-white {
     color: #fff;
     cursor: pointer;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+#black-button{
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
     margin-top: 15px;
     padding: 10px 10px;
     text-transform: uppercase;
