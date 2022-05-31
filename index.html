@@ -4,15 +4,280 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&family=Lora:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/css/style.css" />
 		<title>Brandon's Portfolio</title>
 	</head>
 
 	<body>
-        <head></head>
-        <main></main>
-        <footer></footer>
+		<head>
+			<div class="Name_Container">
+				<h1><span class="full_name">BRANDON NGUYEN</span></h1>
+			</div>
+		</head>
+
+		<main>
+			<!-- ============ / FRONT PAGE / ========== -->
+			<div class="Starter_Container">
+				<section class="Navigation_Container">
+					<nav aria-label="Navigation_Main_Page">
+						<ul>
+							<div class="List_Container">
+							<div class="About_Me">
+								<li><button class="about_me_button">ABOUT ME</button></li>
+							</div>
+							<div class="Portfolio">
+								<li><button class="portfolio_button">PORTFOLIO</button></li>
+							</div>
+							<div class="Resume">
+								<li><button class="resume_button">RESUME</button></li>
+							</div>
+							<div class="Contact_Me">
+								<li><button class="contact_me_button">CONTACT ME</button></li>
+							</div>
+							</div>
+						</ul>
+					</nav>
+				</section>
+				<section class="Branding Container">
+					<div class="branding_quote">
+						<h2>
+							<span class="tldr">tldr: </span>
+							Previously a realtor in San Diego that switched careers to become a Software-Engineer. I enjoy being absorbed into my work and being able to see my work fruition into reality. In real-estate I took pride in being accurate in my analysis and finding success for the investors that worked with me. My analysis is the reason I eventually found inspiration to become an upcoming software-engineer. <span class="bonus">(Ask me about that time I was being innovative by working smarter, not harder)</span>
+						</h2>
+						<h3></h3>
+					</div>
+				</section>
+			</div>
+			<!-- ============ FRONT PAGE ENDS ========== -->
+
+			<div class="Modal_Container">
+				<!-- ============= / ABOUT ME / ========== -->
+				<div class="About_Me_Modal">
+					<!--About Me Parent-->
+					<div class="About_Me_Modal_Content">
+						<div class="modal_title">
+							<h1>ABOUT ME</h1>
+						</div>
+                        <span class="modal_exit_button">
+						<button class="modal_exit_button">&times;</button>
+						</span>
+						<div class="about_me_content">
+							<p><span>
+							Hello! Welcome to my website, I’m glad you found it! If you haven’t figured it out yet, My name is Brandon Nguyen, I started Real Estate when I was in my early 20's, and my main clientele were mostly investors. 
+My favorite part about that job was meeting new people and getting to know them, and when the deal gets closed, it's one of the best feelings. 
+By working with investors I found inspiration by getting hands-on experience on how they operate, but it also made me feel like I could do more with my life, and to eventually replicate what I learned and become an investor myself.</span>
+ 
+<span>Eventually I ended up moving on from sales and became an analyst in Real Estate. My favorite part about the job was being able to be absorbed into my work and being accurate. It was inspirational for me when I got to see my analysis fruition into reality. Later down the road, I ended up building a data compiler within excel that pulled data from Zillows api, which ended up leaving me where I am today, transitioning to becoming a full time software engineer!</span>
+							</p>
+						</div>
+                        <div class="Modal_Footer_Nav">
+						    <nav>
+								<ul>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_resume">Resume</button>
+								    </li>
+								    <li class="footer_nav_right"">
+								    	<button class="footer_nav_contact_me">
+								    		Contact Me
+								    	</button>
+								    </li>
+								</ul>
+                            </nav>
+                        </div>
+					</div>
+				</div>
+				<!-- =============  ABOUT ME ENDS ========== -->
+				<!-- ============= / PORTFOLIO / ========== -->
+				<div class="Portfolio_Modal">
+					<div class="Portfolio_Modal_Content">
+						<div class="modal_title">
+							<h1>PORTFOLIO</h1>
+						</div>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>			 
+						<div class="portfolio_list_container">							
+ 							<div class="box-container">
+ 							 <div class="box-item">
+ 							   <div class="flip-box">
+ 							     <div class="flip-box-front text-center" style="background-image: url('/assets/DOTS.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">DOTS</h3>
+ 							         <p>YOU VS DOTS</p>
+ 							         <img src="" alt="" class="flip-box-img">
+ 							       </div>
+ 							     </div>
+ 							     <div class="flip-box-back text-center" style="background-image: url('/assets/DOTS.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">DOTS</h3>
+ 							         <p>feel free to check out my work.</p>
+ 							         <button class="flip-box-button">Visit Now</button>
+ 							       </div>
+ 							     </div>
+ 							   </div>
+ 							 </div>
+							  <div class="box-item">
+ 							   <div class="flip-box">
+ 							     <div class="flip-box-front text-center" style="background-image: url('/assets/Space-Battle.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">Space Battle</h3>
+ 							         <p>YOU VS 6 ALIENS</p>
+ 							         <img src="" alt="" class="flip-box-img">
+ 							       </div>
+ 							     </div>
+ 							     <div class="flip-box-back text-center" style="background-image: url('/assets/Space-Battle.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">Space Battle</h3>
+ 							         <p>feel free to check out my work.</p>
+ 							         <button class="flip-box-button">Visit Now</button>
+ 							       </div>
+ 							     </div>
+ 							   </div>
+ 							 </div>
+							  <div class="box-item">
+ 							   <div class="flip-box">
+ 							     <div class="flip-box-front text-center" style="background-image: url('/assets/tik-tak-toe.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">Tic-Tac-Toe</h3>
+ 							         <p>X's and O's</p>
+ 							         <img src="" alt="" class="flip-box-img">
+ 							       </div>
+ 							     </div>
+ 							     <div class="flip-box-back text-center" style="background-image: url('/assets/tik-tak-toe.png');">
+ 							       <div class="inner color-white">
+ 							         <h3 class="flip-box-header">Tic-Tac-Toe</h3>
+ 							         <p>feel free to check out my work.</p>
+ 							         <button class="flip-box-button">Visit Now</button>
+ 							       </div>
+ 							     </div>
+ 							   </div>
+ 							 </div>
+							  <div class="box-item">
+ 							   <div class="flip-box">
+ 							     <div class="flip-box-front text-center" style="background-image: url('/assets/Tamagotchi.png');">
+ 							       <div class="inner color-white" id="black">
+ 							         <h3 class="flip-box-header">Tomagotchi</h3>
+ 							         <p>CUTE PETS AND STUFF</p>
+ 							         <img src="" alt="" class="flip-box-img">
+ 							       </div>
+ 							     </div>
+ 							     <div class="flip-box-back text-center" style="background-image: url('/assets/Tamagotchi.png');">
+ 							       <div class="inner color-white" id="black">
+ 							         <h3 class="flip-box-header">Tomagotchi</h3>
+ 							         <p>feel free to check out my work.</p>
+ 							         <button class="flip-box-button" id="black">Visit Now</button>
+ 							       </div>
+ 							     </div>
+ 							   </div>
+ 							 </div>
+						</div>
+					</div>
+					<div class="Modal_Footer_Nav">
+						    <nav>
+								<ul>
+									<li class="footer_nav_left">
+								    	<button class="footer_nav_resume">Resume</button>
+								    </li>
+								    <li class="footer_nav_right"">
+								    	<button class="footer_nav_contact_me">
+								    		Contact Me
+								    	</button>
+								    </li>
+								</ul>
+                            </nav>
+						</div>
+				</div>
+			</div>
+				<!-- ============= PORTFOLIO ENDS ========== -->
+				<!-- ============= / RESUME / ========== -->
+				<div class="Resume_Modal">
+					<div class="Resume_Modal_Content">
+						<div class="modal_title">
+							<h1>RESUME</h1>
+						</div>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
+						<div class="resume_content">
+							<p><img src="/assets/resume.png" alt="" class="resume1">
+							</p>
+						</div>
+                        <div class="Modal_Footer_Nav">
+						    <nav>
+								<ul>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_about_me">About Me</button>
+								    </li>
+								    <li class="footer_nav_right"">
+								    	<button class="footer_nav_portfolio">Portfolio</button>
+								    </li>
+								</ul>
+                            </nav>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- =============== RESUME ENDS ========== -->
+				<!-- ============= / CONTACT ME /  ========== --> 
+				<div class="Contact_Me_Modal">
+					<div class="Contact_Me_Content">
+						<div class="modal_title">
+							<h1>CONTACT ME</h1>
+						</div>
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
+						 
+						<div class="Contact_Me_Form">
+							<div class="Form Container">
+								<form onsubmit= "sendEmail(), reset(); return false;">
+									<div class="get-in-touch"><h3>GET IN TOUCH!</h3></div>
+									<input type="text" id="name" placeholder="Your Name" required>
+									<input type="email" id="email" placeholder="Your Email">
+									<textarea id="message" rows="4" placeholder="Talk Soon!"></textarea>
+									<div class="submit">
+									<button class="submit_button">Send</button>
+									</div>
+								</form>	
+							</div>
+						</div>			
+						<nav>
+							<div class="Modal_Footer_Nav">
+								<ul>
+								    <li class="footer_nav_left">
+								    	<button class="footer_nav_about_me">About Me</button>
+								    </li>
+								    <li class="footer_nav_right"">
+								    	<button class="footer_nav_portfolio">Portfolio</button>
+								    </li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<!-- ============= CONTACT ME ENDS ========== -->
+			</div>
+			<!-- ========== / PLAT GOAL / =============== -->
+			<div class="Modal_Container_Minimized">
+				<div class="about_me_modal_minimized">
+					<section></section>
+				</div>
+				<div class="portfolio_modal_minimized">
+					<section></section>
+				</div>
+				<div class="resume_modal_minimized">
+					<section></section>
+				</div>
+				<div class="contact_me_modal_minimized">
+					<section></section>
+				</div>
+			</div>
+			<!-- ========== PLAT GOAL END =============== -->
+		</main>
+		<footer>
+			<a href="https://www.linkedin.com/in/bdnii/"><img src="/assets/LinkedIn.png" class="linkedin"></a>
+			<a href="https://github.com/bdnkai"><img src="/assets/GitHub.png" class="github"></a>
+
+		</footer>
 		<script src="/js/script.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 </html>
