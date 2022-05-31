@@ -5,22 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&family=Lora:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&family=Lora:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Brandon's Portfolio</title>
 	</head>
-
 	<body>
 		<head>
 			<div class="Name_Container">
 				<h1><span class="full_name">BRANDON NGUYEN</span></h1>
 			</div>
 		</head>
-
 		<main>
-			<!-- ============ / FRONT PAGE / ========== -->
 			<div class="Starter_Container">
 				<section class="Navigation_Container">
 					<nav aria-label="Navigation_Main_Page">
@@ -52,10 +49,8 @@
 					</div>
 				</section>
 			</div>
-			<!-- ============ FRONT PAGE ENDS ========== -->
-
 			<div class="Modal_Container">
-				<!-- ============= / ABOUT ME / ========== -->
+
 				<div class="About_Me_Modal">
 					<!--About Me Parent-->
 					<div class="About_Me_Modal_Content">
@@ -66,12 +61,10 @@
 						<button class="modal_exit_button">&times;</button>
 						</span>
 						<div class="about_me_content">
-							<p><span>
-							Hello! Welcome to my website, I’m glad you found it! If you haven’t figured it out yet, My name is Brandon Nguyen, I started Real Estate when I was in my early 20's, and my main clientele were mostly investors. 
-My favorite part about that job was meeting new people and getting to know them, and when the deal gets closed, it's one of the best feelings. 
-By working with investors I found inspiration by getting hands-on experience on how they operate, but it also made me feel like I could do more with my life, and to eventually replicate what I learned and become an investor myself.</span>
- 
-<span>Eventually I ended up moving on from sales and became an analyst in Real Estate. My favorite part about the job was being able to be absorbed into my work and being accurate. It was inspirational for me when I got to see my analysis fruition into reality. Later down the road, I ended up building a data compiler within excel that pulled data from Zillows api, which ended up leaving me where I am today, transitioning to becoming a full time software engineer!</span>
+							<p><span class="intro">
+							Hello!</span> Welcome to my website, I’m glad you found it! If you haven’t figured it out yet, My name is Brandon Nguyen, I started Real Estate when I was in my early 20's, and my main clientele were mostly investors. 
+							My favorite part about that job was meeting new people and getting to know them, and when the deal gets closed, it's one of the best feelings. 
+							By working with investors I found inspiration by getting hands-on experience on how they operate, but it also made me feel like I could do more with my life, and to eventually replicate what I learned and become an investor myself.</span><span>Eventually I ended up moving on from sales and became an analyst in Real Estate. My favorite part about the job was being able to be absorbed into my work and being accurate. It was inspirational for me when I got to see my analysis fruition into reality. Later down the road, I ended up building a data compiler within excel that pulled data from Zillows api, which ended up leaving me where I am today, transitioning to becoming a full time software engineer!</span>
 							</p>
 						</div>
                         <div class="Modal_Footer_Nav">
@@ -90,8 +83,6 @@ By working with investors I found inspiration by getting hands-on experience on 
                         </div>
 					</div>
 				</div>
-				<!-- =============  ABOUT ME ENDS ========== -->
-				<!-- ============= / PORTFOLIO / ========== -->
 				<div class="Portfolio_Modal">
 					<div class="Portfolio_Modal_Content">
 						<div class="modal_title">
@@ -190,8 +181,8 @@ By working with investors I found inspiration by getting hands-on experience on 
 						</div>
 				</div>
 			</div>
-				<!-- ============= PORTFOLIO ENDS ========== -->
-				<!-- ============= / RESUME / ========== -->
+		
+
 				<div class="Resume_Modal">
 					<div class="Resume_Modal_Content">
 						<div class="modal_title">
@@ -217,22 +208,19 @@ By working with investors I found inspiration by getting hands-on experience on 
 					</div>
 				</div>
 			</div>
-				<!-- =============== RESUME ENDS ========== -->
-				<!-- ============= / CONTACT ME /  ========== --> 
 				<div class="Contact_Me_Modal">
 					<div class="Contact_Me_Content">
 						<div class="modal_title">
 							<h1>CONTACT ME</h1>
 						</div>
-						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>
-						 
+						 <span class="modal_exit_button"><button class="modal_exit_button">&times;</button></span>				 
 						<div class="Contact_Me_Form">
 							<div class="Form Container">
 								<form onsubmit= "sendEmail(), reset(); return false;">
 									<div class="get-in-touch"><h3>GET IN TOUCH!</h3></div>
 									<input type="text" id="name" placeholder="Your Name" required>
 									<input type="email" id="email" placeholder="Your Email">
-									<textarea id="message" rows="4" placeholder="Talk Soon!"></textarea>
+									<textarea id="message" rows="4" placeholder="Tell me about yourself :D"></textarea>
 									<div class="submit">
 									<button class="submit_button">Send</button>
 									</div>
@@ -253,9 +241,7 @@ By working with investors I found inspiration by getting hands-on experience on 
 						</nav>
 					</div>
 				</div>
-				<!-- ============= CONTACT ME ENDS ========== -->
 			</div>
-			<!-- ========== / PLAT GOAL / =============== -->
 			<div class="Modal_Container_Minimized">
 				<div class="about_me_modal_minimized">
 					<section></section>
@@ -270,7 +256,6 @@ By working with investors I found inspiration by getting hands-on experience on 
 					<section></section>
 				</div>
 			</div>
-			<!-- ========== PLAT GOAL END =============== -->
 		</main>
 		<footer>
 			<a href="https://www.linkedin.com/in/bdnii/"><img src="assets/LinkedIn.png" class="linkedin"></a>
