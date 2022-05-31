@@ -70,12 +70,12 @@ This portfolio page was made by me for an all-in-one easy navigation. A minimali
 
 ## Credits:
 
-Modal Learning:
-https://www.youtube.com/watch?v=6ophW7Ask_0
-
-Card Flipping Information and Inspiration :
-https://sowebsited.com/basics/flipcard.html
-https://www.youtube.com/watch?v=QGVXmoZWZuw
+Modal Learning:<br />
+https://www.youtube.com/watch?v=6ophW7Ask_0<br />
+<br />
+Card Flipping Information and Inspiration :<br />
+https://sowebsited.com/basics/flipcard.html<br />
+https://www.youtube.com/watch?v=QGVXmoZWZuw<br />
 
 ---
 
