@@ -412,7 +412,9 @@ form button {
     font-weight: 500;
 }
 
-/* --------------- INSIDE MODALS CONTENT STARTS HERE --------------- */
+.intro {
+    padding-left: 40px;
+}
 
 .modal_title {
     display: flex;
@@ -440,9 +442,6 @@ form button {
     margin-left: 3%;
     margin: 3% auto;
 }
-
-/*========== CARD FLIPPING ============*/
-
 
 .text-center {
     text-align: center;
@@ -584,7 +583,6 @@ color-white {
     text-transform: uppercase;
 }
 
-/* ================  FOOTER  ======================= */
 footer {
     display: flex;
     justify-content: center;

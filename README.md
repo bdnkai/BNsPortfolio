@@ -51,10 +51,7 @@ This portfolio page was made by me for an all-in-one easy navigation. A minimali
 
 ## Wireframes:
 
-<img src="wireplanning/Frame 1.png" width="200" height="150">
-<img src="wireplanning/Frame 2.png" width="200" height="150">
-<img src="wireplanning/Frame 3.png" width="200" height="150">
-<img src="wireplanning/Frame 4.png" width="200" height="150">
+<img src="wireplanning/Frame 1.png" width="200" height="150"><img src="wireplanning/Frame 2.png" width="200" height="150"><img src="wireplanning/Frame 3.png" width="200" height="150"><img src="wireplanning/Frame 4.png" width="200" height="150">
 
 <br />
 <br />
@@ -68,6 +65,17 @@ This portfolio page was made by me for an all-in-one easy navigation. A minimali
 - Flip card for Tomagotchi prodject still has a white border on "visit now button"
 
 - Visit Now button on portfolio page, has not been added in the event listeners (will include a functional button when the projects are more complete)
+
+---
+
+## Credits:
+
+Modal Learning:
+https://www.youtube.com/watch?v=6ophW7Ask_0
+
+Card Flipping Information and Inspiration :
+https://sowebsited.com/basics/flipcard.html
+https://www.youtube.com/watch?v=QGVXmoZWZuw
 
 ---
 
