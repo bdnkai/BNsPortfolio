@@ -36,7 +36,7 @@ As a developer of the website, I want my visitors...
 
 
 ## Launch / Setup
-https://github.com/bdnkai/repo-name
+https://github.com/bdnkai/BNsPortfolio
 
 
 
