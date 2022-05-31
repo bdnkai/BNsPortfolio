@@ -51,10 +51,7 @@ This portfolio page was made by me for an all-in-one easy navigation. A minimali
 
 ## Wireframes:
 
-<img src="wireplanning/Frame 1.png" width="200" height="150">
-<img src="wireplanning/Frame 2.png" width="200" height="150">
-<img src="wireplanning/Frame 3.png" width="200" height="150">
-<img src="wireplanning/Frame 4.png" width="200" height="150">
+<img src="wireplanning/Frame 1.png" width="200" height="150"><img src="wireplanning/Frame 2.png" width="200" height="150"><img src="wireplanning/Frame 3.png" width="200" height="150"><img src="wireplanning/Frame 4.png" width="200" height="150">
 
 <br />
 <br />
