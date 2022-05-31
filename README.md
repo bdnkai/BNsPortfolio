@@ -1,12 +1,14 @@
 # Brandon Nguyen's Portfolio Page
-The start of an all in one easy navigation portfolio page. Minimalistic theme where visitors gets to know me without having to jump every where and having to click everything. 
+The start of an all in one easy navigation portfolio page. A minimalistic theme where visitors gets to know me without having to jump every where and having to click everything. 
+
 
 
 ## Technologies
--HTML5
--CSS
--JavaScript
--VSCode 
+- HTML5
+- CSS
+- JavaScript
+- VSCode 
+
 
 
 ## Behind The Scene Thought Process Before Creation 
@@ -31,8 +33,11 @@ As a developer of the website, I want my visitors...
 - To be able to contact me by making a contact me link and a placement for the visitors to leave his/her name and email
 
 
+
+
 ## Launch / Setup
 https://github.com/bdnkai/repo-name
+
 
 
 
