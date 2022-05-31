@@ -320,6 +320,7 @@ form {
     min-width: 400px;
     padding: 2vw 4vw;
     border-radius: 10px;
+    padding-bottom: 60px;
 }
 
 form input,
