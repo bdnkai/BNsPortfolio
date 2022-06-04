@@ -1,0 +1,609 @@
+/* @media screen and (max-width:700px) { */
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+        /* max-width: 1200px; */
+        /* max-height: 800px; */
+        margin: 15vh auto;
+        }
+
+    /*======  FLEXING CONTAINERS STARTS HERE  ======*/
+    .Name_Container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Starter_Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .List_Container {
+        display: inline-flex;
+        height: 3vh;
+        padding-bottom: 3.5vh;
+        padding-top: 3.5vh;
+    }    
+    
+    /*===============  BUTTONS STARTS HERE  =============*/
+
+    /*----------  NAVIGATION BUTTON (FRONT PAGE)  ---------*/
+    .About_Me,
+    .Portfolio,
+    .Resume,
+    .Contact_Me {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        max-width: 10vw;
+        min-width: 25vw;
+        height: 3vh;
+        border-right: 2px solid rgba(80, 155, 124, 0.575);
+        
+    }
+
+    .Contact_Me {
+        border-right: 2px solid rgba(86, 168, 134, 0);
+        flex-wrap: nowrap;
+    }
+
+
+    /*--------  NAVIGATION BUTTONS (FRONT PAGE)  ---------*/
+    .about_me_button,
+    .portfolio_button,
+    .resume_button,
+    .contact_me_button {
+        max-width: 20vw;
+        min-width: 21vw;
+        height: 10vh;
+        max-height: 10vh;
+        margin-left: 2.25%;
+        margin-right: auto;
+        flex-wrap: nowrap;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.45vw;
+        font-weight: 500;
+        border-top: 0px solid rgba(137, 214, 198, 0);
+        border-left: 0px solid rgba(137, 214, 198, 0);
+        border-bottom: 0px solid rgba(137, 214, 198, 0);
+        border-right: 0px solid rgba(137, 214, 198, 0);
+        background-color: rgba(137, 214, 198, 0);
+        cursor: pointer;
+    }
+
+    .about_me_button {
+        text-align: center;
+        border-left: 2.4px solid rgba(80, 155, 124, 0.575);
+        padding-left: 1.2vw;
+    }
+
+    .contact_me_button {
+        border-right: 2.2px solid rgba(80, 155, 124, 0.575);
+        flex-wrap: nowrap;
+        padding-right: 18vw;
+    }
+
+    /* ---------  NAVIGATION BUTTONS (FOOTER)  ------- */
+
+    .Modal_Footer_Nav {
+        display: inline-flex;
+        justify-content: center;
+        width:90vw;
+        margin-top: 20vw;
+        
+    }
+
+    .footer_nav_left,
+    .footer_nav_right {
+        display: inline-flex;
+        
+    }
+
+    .footer_nav_left {
+        margin-left: 3vw;
+    }
+
+    .footer_nav_right {
+        margin-left: 38vw;
+    }
+
+    .footer_nav_resume,
+    .footer_nav_contact_me,
+    .footer_nav_about_me,
+    .footer_nav_portfolio {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.5vw;
+        font-weight: 400;
+        background-color: rgba(205, 199, 195, .0);
+        border-right: 1px solid rgba(205, 198, 195, 0);
+        border-top: 1px solid rgba(205, 198, 195, 0);
+        border-left: 1px solid rgba(205, 198, 195, 0);
+        border-bottom: 1px solid rgba(205, 198, 195, 0);
+        cursor: pointer;
+    }
+
+    .footer_nav_resume:hover,
+    .footer_nav_contact_me:hover,
+    .footer_nav_about_me:hover,
+    .footer_nav_portfolio:hover {
+        color: #ca855d;
+        font-size: 3.5vw;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: cursor;
+    }
+
+    /* ------------  EXIT BUTTONS  --------------- */
+
+    .modal_exit_button {
+        display: flex;
+        justify-content: first baseline;
+        position: absolute;
+        text-align: center;
+        height: 1vh;
+        width: 1vw;
+        margin-top: 2.8vh;
+        margin-right: 4vw;
+        background-color: rgba(0, 0, 0, .0);
+        color: rgb(53, 93, 97);
+        top: 0;
+        right: 0;
+        border: none;
+        font-size: 30px;
+    }
+
+    .modal_exit_button:hover,
+    .modal_exit_button:focus {
+        color: #de9d77;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*=========  MODALS CSS STARTS HERE  ========== */
+
+    /*------  ABOUT ME MODAL  ------ */
+    .About_Me_Modal {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: 10% auto;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .About_Me_Modal_Content {
+        display: block;
+        background-color: rgba(195, 221, 224, 0.95);
+        margin: 5% auto;
+        padding: 0.5%;
+        width: 90vw;
+        min-height: 90%;
+        max-height: 90%;
+        box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+    }
+
+
+
+    /*-----------  PORTFOLIO MODAL  ----------- */
+    .Portfolio_Modal {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: 10% auto;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .Portfolio_Modal_Content {
+        display: block;
+        background-color: rgba(195, 221, 224, 0.95);
+        margin: 10% auto;
+        padding: 0.5%;
+        width: 90vw;
+        min-height: 95%;
+        max-height: 95%;
+        box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+    }
+
+    /*-----------  RESUME MODAL  ----------- */
+    .Resume_Modal {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: 10% auto;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .Resume_Modal_Content {
+        display: block;
+        background-color: rgba(195, 221, 224, 0.95);
+        margin: 5% auto;
+        padding: 0.5%;
+        width: 90vw;
+        min-height: 100%;
+        max-height: 120%;
+        box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+    }
+
+
+    /*-----------  CONTACT ME MODAL  ----------- */
+    .Contact_Me_Modal {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin-left: 10% auto;;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .Contact_Me_Content {
+        display: block;
+        background-color: rgba(195, 221, 224, 0.95);
+        margin: 5% auto;
+        padding: 0.5%;
+        width: 90vw;
+        max-height: 100%;
+        box-shadow: 0 5px 8px 0, rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, .1);
+
+    }
+
+    .Form_Container {
+        display: flex;
+        width: 90%;
+        /* height: 10%; */
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Contact_Me_Form {
+        display: flex;
+        width: 85vw;
+        height: 55vh;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    /*===============  TEXT EDITING STARTS HERE  ===============*/
+    form {
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 90%;
+        padding: 1vh 2vw;
+        border-radius: 1vw;
+        /* margin-bottom: vh; */
+    }
+
+    form input,
+    form textarea {
+        display: flex;
+        justify-content: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        border: 0;
+        width: 75vw;
+        margin: 1.15% 0;
+        margin-right: 50vw;
+        margin-left: auto;
+        padding: 1.5%;
+        outline: none;
+    }
+
+    form button {
+        display: flex;
+        font-family: 'Quicksand', sans-serif;
+        background: #c2533f;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 2%;
+        font-size: 80%;
+        font-weight: 500;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        width: 30%;
+        margin: 2% auto 0;
+        margin-left: 40vw;
+        border-radius: 2vw;
+    }
+
+    .me{
+        display: none;
+    }
+    .get-in-touch {
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    .full_name {
+        font-family: 'Poppins', sans-serif;
+        flex-wrap: nowrap;
+        font-size: 250%;
+        font-weight: 200;
+
+    }
+
+    .tldr {
+        font-size: 5.5vw;
+        font-weight: 400;
+        padding-right: 1vw;
+
+    }
+
+    .branding_quote {
+        display: flex;
+        text-align: justify;
+        width: 90vw;
+        max-width: 100vw;
+        min-width: none;
+        max-height: 70vh;
+        font-size: 3.5vw;
+        line-height: 100%;
+        padding-top: 7%;
+    }
+
+    .resume1 {
+        align-items: center;
+        float: top;
+        width: 88vw;
+        height: 73vh;
+        opacity: .85;
+        margin-left: 1vw;
+        z-index: 1;
+    }
+
+    .bonus {
+        padding-top: 1vh;
+        font-weight: 500;
+    }
+
+    .about_me_content {
+        padding: 2%;
+        margin: 2%;
+        font-size: 75%;
+        justify-content: justify;
+    }
+
+    .intro {
+        padding-left: 6.5vh;
+    }
+
+    .modal_title {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 6vw;
+        background-color: rgba(237, 211, 192, 0.75);
+        border-right: 3px solid rgba(0, 0, 0, 1);
+        border-top: 3px solid rgba(0, 0, 0, 1);
+        border-left: 3px solid rgba(0, 0, 0, 1);
+        border-bottom: 3px solid rgba(0, 0, 0, 1);
+        width: 55vw;;
+        margin: 3vw auto 3vh;
+        border-radius: 10px;
+        padding: 2vw;
+    }
+
+
+    .text-center {
+        text-align: center;
+        
+    }
+
+    .inner,
+    color-white {
+        color: white;
+    }
+
+    #black {
+        color: black;
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 6.5vw;
+        margin-right: auto;
+        padding: 1% 1%;
+        width: 80%;
+    }
+
+    .box-item {
+        position: relative;
+        flex-wrap: wrap;
+        -webkit-backface-visibility: hidden;
+        width: 22vw;
+        margin-bottom: 1vh;
+        max-width: 100%;
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box:hover {
+        cursor: pointer;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 2vw;
+        min-height: 18vh;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box.is-flipped .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box.is-flipped .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0px;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+        top: 50%;
+    }
+
+    .flip-box-header {
+        font-size: 5.5vw;
+        font-weight: 500;
+    }
+
+    .flip-box p {
+        font-size: 2vw;
+        line-height: 1.5em;
+        font-weight: 600;
+    }
+
+    #black h3 {
+        font-size: 3.8vw;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+
+    .flip-box-img {
+        margin-top: 6vh;
+    }
+
+    .flip-box-button {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 1vh;
+        padding: 1vh 1vw;
+        text-transform: uppercase;
+    }
+
+    #black-button {
+        background-color: transparent;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 2px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 1vh;
+        padding: 1vh 1vw;
+        text-transform: uppercase;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0% auto;
+        margin: left 5vh;
+        max-width: 10vw;
+        min-height: 2vh;
+        padding-top: 1vh;
+    }
+
+    a img {
+        display: flex;
+        justify-content: center;
+        min-height: 3vh;
+        min-width: 3vw;
+        max-width: 6vw;
+        max-height: 6vh;
+        margin: 0% auto;
+        background-color: white;
+        padding: 5px;
+    }
+
+
+
+
+/* } */
