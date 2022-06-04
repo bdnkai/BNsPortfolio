@@ -1,6 +1,3 @@
-/*----- constants -----*/
-
-/*----- app's state (variables) -----*/
 /*----- cached element references -----*/
 const aboutMeContent_El = document.querySelector('.About_Me_Modal');
 const portfolioContent_El = document.querySelector('.Portfolio_Modal');
@@ -32,6 +29,11 @@ const resumeExit = resumeContent_El.querySelector('.modal_exit_button');
 const contactMeExit = contactMe_El.querySelector('.modal_exit_button');
 
 const cards = document.querySelectorAll('.flip-box');
+const form_El = document.querySelector('.Form_Container');
+const nameInput_El = form_El.querySelector('#name');
+const emailInput_El = form_El.querySelector('#email');
+const messageInput_El = form_El.querySelector('#message');
+console.log(messageInput_El);
 
 /*----- event listeners -----*/
 
@@ -123,12 +125,14 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 //======================= CONTACT ME FORM ===================
-Email.send({
-	Host: 'smtp.yourisp.com',
-	Username: 'username',
-	Password: 'password',
-	To: 'them@website.com',
-	From: 'you@isp.com',
-	Subject: 'This is the subject',
-	Body: 'And this is the body',
-}).then((message) => alert(message));
+function sendEmail() {
+	Email.send({
+		SecureToken: 'fbd2cecc-cc79-4a68-b726-e85030775ce8',
+		To: 'bdn.kai@gmail.com',
+		From: 'bdn.kai@gmail.com',
+		Subject: 'BDs Portfolio Inquiry',
+		Body: `<br> Name : ${nameInput_El.value}
+		<br> Email: ${emailInput_El.value}  
+		<br> Message: ${messageInput_El.value}`,
+	}).then(() => alert(`Thank you, Your email has been sent!`));
+}
