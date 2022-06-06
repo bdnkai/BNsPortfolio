@@ -60,9 +60,6 @@ This portfolio page was made by me for an all-in-one easy navigation. A minimali
 
 ## Unsolved / Bugs:
 
-- Contact Me Form has not been fully implemented but inputs and JavaScripts are in place and functional.
-
-- Visit Now button on portfolio page, has not been added in the event listeners (will include a functional button when the projects are more complete)
 
 ---
 
